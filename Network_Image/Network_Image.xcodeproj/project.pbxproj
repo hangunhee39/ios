@@ -14,6 +14,7 @@
 		02552105296C5C82002D2926 /* Network_ImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02552104296C5C82002D2926 /* Network_ImageTests.swift */; };
 		0255210F296C5C82002D2926 /* Network_ImageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0255210E296C5C82002D2926 /* Network_ImageUITests.swift */; };
 		02552111296C5C82002D2926 /* Network_ImageUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02552110296C5C82002D2926 /* Network_ImageUITestsLaunchTests.swift */; };
+		0271B978296D5D5C00A4E003 /* webService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0271B977296D5D5C00A4E003 /* webService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		0255210A296C5C82002D2926 /* Network_ImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Network_ImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0255210E296C5C82002D2926 /* Network_ImageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network_ImageUITests.swift; sourceTree = "<group>"; };
 		02552110296C5C82002D2926 /* Network_ImageUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network_ImageUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0271B977296D5D5C00A4E003 /* webService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				025520F3296C5C81002D2926 /* Network_ImageApp.swift */,
 				025520F5296C5C81002D2926 /* ContentView.swift */,
+				0271B977296D5D5C00A4E003 /* webService.swift */,
 				025520F7296C5C82002D2926 /* Assets.xcassets */,
 				025520F9296C5C82002D2926 /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				025520F6296C5C81002D2926 /* ContentView.swift in Sources */,
 				025520F4296C5C81002D2926 /* Network_ImageApp.swift in Sources */,
+				0271B978296D5D5C00A4E003 /* webService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

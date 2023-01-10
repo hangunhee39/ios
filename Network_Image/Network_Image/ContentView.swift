@@ -7,15 +7,28 @@
 
 import SwiftUI
 
+
+
+//https://jsonplaceholder.typicode.com json 데이터 받는 사이트
 struct ContentView: View {
+    
+    @State var todos = [Todo]()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        
+        List(todos){ todo in
+            VStack(alignment: .leading){
+                Text(todo.title!)
+                Text(todo.completed!.description)
+                    .foregroundColor( todo.completed == true ? .red : .blue)
+            }
+            
         }
-        .padding()
+        .onAppear{
+            WebService().getTodos{ todos in
+                self.todos = todos
+            }
+        }
     }
 }
 
