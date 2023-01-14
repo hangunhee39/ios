@@ -12,11 +12,11 @@ struct ContentView: View {
     @State private var time: Double = 0
     
     var ReadbleTime: String {
-        var sec = Int(time) % 60
-        var min = Int(time) / 60
+        let sec = Int(time) % 60
+        let min = Int(time) / 60
         
         //소수를 나눌때 truncating 사용해야 한다
-        var milsec = time.truncatingRemainder(dividingBy: 1)
+        let milsec = time.truncatingRemainder(dividingBy: 1)
         let milString = String(format: "%.1f" , milsec).split(separator: ".").last ?? "0"
         
         return "\(String(format: "%02d", min)) " + ":" + " \(String(format: "%02d", sec)) " + ":" + " \(milString)"
